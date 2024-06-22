@@ -6,6 +6,7 @@
 * Flyway
 * Basic authentication
 
+# How to
 1. Build
    * Command to build native image, need docker: ```mvn clean package -Pnative```
    * Command to build jar: ```mvn clean package```
@@ -17,7 +18,6 @@
 3. API, postman collection is available in the root folder [TODO LIST.postman_collection.json](TODO%20LIST.postman_collection.json)
 
 # Endpoints
-
 ### GET http://localhost:8080/ping
 >No authentication required
 <hr>
