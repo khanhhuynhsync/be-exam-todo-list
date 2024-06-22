@@ -20,9 +20,12 @@
 
 ### GET http://localhost:8080/ping
 >No authentication required
+<hr>
 
 ### POST http://localhost:8080/useraccount/create
 >No authentication required
+
+>Only "admin" and "user" roles are available right now
 
 Request body:
 
@@ -33,8 +36,7 @@ Request body:
     "role": "admin"
 }
 ```
-
->Only "admin" and "user" roles are available right now
+<hr>
 
 ### POST http://localhost:8080/todos/create
 >Basic authentication required
@@ -49,32 +51,37 @@ Request body:
     "content": "content"
 }
 ```
+<hr>
 
 ### GET http://localhost:8080/todos/listall
 >Basic authentication required
 
 >Roles allowed: "admin"
-
+<hr>
 
 ### GET http://localhost:8080/todos/{{id}}
 >Basic authentication required
 
 >Roles allowed: "admin"
+<hr>
 
 ### DELETE http://localhost:8080/todos/{{id}}
 >Basic authentication required
 
 >Roles allowed: "admin"
+<hr>
 
 ### GET http://localhost:8080/todos/me
 >Basic authentication required
 
 >Roles allowed: "admin" and "user"
+<hr>
 
 ### GET http://localhost:8080/todos/me/{{id}}
 >Basic authentication required
 
 >Roles allowed: "admin" and "user"
+<hr>
 
 ### DELETE http://localhost:8080/todos/me/{{id}}
 >Basic authentication required
